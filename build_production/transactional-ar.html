@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+  <meta charset="utf-8">
+  <meta name="x-apple-disable-message-reformatting">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no, date=no, address=no, email=no, url=no">
+  <meta name="color-scheme" content="light">
+  <meta name="supported-color-schemes" content="light">
+  <!--[if mso]>
+  <noscript>
+    <xml>
+      <o:OfficeDocumentSettings xmlns:o="urn:schemas-microsoft-com:office:office">
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+      </o:OfficeDocumentSettings>
+    </xml>
+  </noscript>
+  <style>
+    td,th,div,p,a,h1,h2,h3,h4,h5,h6 {font-family: "Segoe UI", sans-serif; mso-line-height-rule: exactly;}
+    .mso-break-all {word-break: break-all;}
+  </style>
+  <![endif]-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" media="screen">
+  <style>
+    .m-0 {
+      margin: 0 !important;
+    }
+    .mx-auto {
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+    .my-0 {
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+    }
+    .mb-0 {
+      margin-bottom: 0 !important;
+    }
+    .mb-2 {
+      margin-bottom: 8px !important;
+    }
+    .mb-4 {
+      margin-bottom: 16px !important;
+    }
+    .mb-30px {
+      margin-bottom: 30px !important;
+    }
+    .ml-2 {
+      margin-left: 8px !important;
+    }
+    .mr-2 {
+      margin-right: 8px !important;
+    }
+    .mt-0 {
+      margin-top: 0 !important;
+    }
+    .block {
+      display: block !important;
+    }
+    .inline-block {
+      display: inline-block !important;
+    }
+    .table {
+      display: table !important;
+    }
+    .hidden {
+      display: none !important;
+    }
+    .w-40pc {
+      width: 40% !important;
+    }
+    .w-60pc {
+      width: 60% !important;
+    }
+    .w-600px {
+      width: 600px !important;
+    }
+    .w-full {
+      width: 100% !important;
+    }
+    .max-w-500px {
+      max-width: 500px !important;
+    }
+    .max-w-full {
+      max-width: 100% !important;
+    }
+    .rounded-full {
+      border-radius: 9999px !important;
+    }
+    .rounded-lg {
+      border-radius: 8px !important;
+    }
+    .border {
+      border-width: 1px !important;
+    }
+    .border-0 {
+      border-width: 0px !important;
+    }
+    .border-l-2 {
+      border-left-width: 2px !important;
+    }
+    .border-r-2 {
+      border-right-width: 2px !important;
+    }
+    .border-solid {
+      border-style: solid !important;
+    }
+    .border-_b6e4ff {
+      border-color: #b6e4ff !important;
+    }
+    .border-_dee2e6 {
+      border-color: #dee2e6 !important;
+    }
+    .border-gray-200 {
+      border-color: #e5e7eb !important;
+    }
+    .bg-_035fe9 {
+      background-color: #035fe9 !important;
+    }
+    .bg-_101828 {
+      background-color: #101828 !important;
+    }
+    .bg-_edf8ff {
+      background-color: #edf8ff !important;
+    }
+    .bg-_f9f9f9 {
+      background-color: #f9f9f9 !important;
+    }
+    .bg-white {
+      background-color: #fffffe !important;
+    }
+    .bg-url-https---lh3_googleusercontent_com-d-17ETkmOoi3tb2K44sewdqylR2N8iis-wn- {
+      background-image: url('https://lh3.googleusercontent.com/d/17ETkmOoi3tb2K44sewdqylR2N8iis-wn') !important;
+    }
+    .bg-url-https---lh3_googleusercontent_com-d-1LvGw92x9FbSaCS3cKwIrwRgzLU03RdIZ- {
+      background-image: url('https://lh3.googleusercontent.com/d/1LvGw92x9FbSaCS3cKwIrwRgzLU03RdIZ') !important;
+    }
+    .bg-auto {
+      background-size: auto !important;
+    }
+    .bg-left {
+      background-position: left !important;
+    }
+    .bg-right {
+      background-position: right !important;
+    }
+    .bg-no-repeat {
+      background-repeat: no-repeat !important;
+    }
+    .p-0 {
+      padding: 0 !important;
+    }
+    .p-4 {
+      padding: 16px !important;
+    }
+    .p-5 {
+      padding: 20px !important;
+    }
+    .px-5 {
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+    }
+    .px-30px {
+      padding-left: 30px !important;
+      padding-right: 30px !important;
+    }
+    .py-10 {
+      padding-top: 40px !important;
+      padding-bottom: 40px !important;
+    }
+    .py-5 {
+      padding-top: 20px !important;
+      padding-bottom: 20px !important;
+    }
+    .pb-10 {
+      padding-bottom: 40px !important;
+    }
+    .pb-5 {
+      padding-bottom: 20px !important;
+    }
+    .pb-30px {
+      padding-bottom: 30px !important;
+    }
+    .pl-2 {
+      padding-left: 8px !important;
+    }
+    .pl-3 {
+      padding-left: 12px !important;
+    }
+    .pl-10px {
+      padding-left: 10px !important;
+    }
+    .pr-2 {
+      padding-right: 8px !important;
+    }
+    .pr-3 {
+      padding-right: 12px !important;
+    }
+    .pr-10px {
+      padding-right: 10px !important;
+    }
+    .pt-10 {
+      padding-top: 40px !important;
+    }
+    .pt-5 {
+      padding-top: 20px !important;
+    }
+    .pt-30px {
+      padding-top: 30px !important;
+    }
+    .text-left {
+      text-align: left !important;
+    }
+    .text-center {
+      text-align: center !important;
+    }
+    .text-right {
+      text-align: right !important;
+    }
+    .align-middle {
+      vertical-align: middle !important;
+    }
+    .font-sans {
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif !important;
+    }
+    .text-2xl {
+      font-size: 24px !important;
+    }
+    .text-45px {
+      font-size: 45px !important;
+    }
+    .text-base {
+      font-size: 16px !important;
+    }
+    .text-sm {
+      font-size: 14px !important;
+    }
+    .text-xl {
+      font-size: 20px !important;
+    }
+    .font-bold {
+      font-weight: 700 !important;
+    }
+    .font-medium {
+      font-weight: 500 !important;
+    }
+    .font-normal {
+      font-weight: 400 !important;
+    }
+    .leading-normal {
+      line-height: 1.5 !important;
+    }
+    .text-_1f1f1f {
+      color: #1f1f1f !important;
+    }
+    .text-_333333 {
+      color: #333333 !important;
+    }
+    .text-_666666 {
+      color: #666666 !important;
+    }
+    .text-white {
+      color: #fffffe !important;
+    }
+    .shadow-md {
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1) !important;
+    }
+    .no-underline {
+      text-decoration: none !important;
+    }
+    .mso-font-width-150pc {
+      mso-font-width: 150%;
+    }
+    .-webkit-font-smoothing-antialiased {
+      -webkit-font-smoothing: antialiased !important;
+    }
+    .word-break-break-word {
+      word-break: break-word !important;
+    }
+    /* iOS dark mode fix */
+    :root {
+      color-scheme: light !important;
+    }
+    img {
+      max-width: 100%;
+      vertical-align: middle;
+    }
+    /* Force light mode */
+    html,
+    body {
+      background-color: #f9f9f9 !important;
+      color: #333333 !important;
+    }
+    .bg-_f9f9f9 {
+      background-color: #f9f9f9 !important;
+    }
+    .bg-white {
+      background-color: white !important;
+    }
+    .bg-_edf8ff {
+      background-color: #edf8ff !important;
+    }
+    .bg-_035fe9 {
+      background-color: #035fe9 !important;
+    }
+    .bg-_101828 {
+      background-color: #101828 !important;
+    }
+    .text-white {
+      color: #ffffff !important;
+    }
+    .text-_333333 {
+      color: #333333 !important;
+    }
+    .text-_666666 {
+      color: #666666 !important;
+    }
+    .text-_1f1f1f {
+      color: #1f1f1f !important;
+    }
+    .border-_dee2e6 {
+      border-color: #dee2e6 !important;
+    }
+    .border-_b6e4ff {
+      border-color: #b6e4ff !important;
+    }
+    /* Dark mode overrides - forced to light */
+    @media (prefers-color-scheme: dark) {
+      body,
+      .bg-_f9f9f9 {
+        background-color: #f9f9f9 !important;
+      }
+      .bg-white {
+        background-color: white !important;
+      }
+      .bg-_edf8ff {
+        background-color: #edf8ff !important;
+      }
+      .bg-_035fe9 {
+        background-color: #035fe9 !important;
+      }
+      .bg-_101828 {
+        background-color: #101828 !important;
+      }
+      .text-_333333 {
+        color: #333333 !important;
+      }
+      .text-_666666 {
+        color: #666666 !important;
+      }
+      .text-_1f1f1f {
+        color: #1f1f1f !important;
+      }
+      div,
+      p,
+      span,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      a {
+        color: inherit !important;
+      }
+      [data-ogsc] .bg-white {
+        background-color: white !important;
+      }
+      [data-ogsc] .text-_333333 {
+        color: #333333 !important;
+      }
+      [data-ogsc] .text-_666666 {
+        color: #666666 !important;
+      }
+    }
+  </style>
+
+</head>
+<body class="m-0 p-0 w-full word-break-break-word -webkit-font-smoothing-antialiased bg-_f9f9f9" style="background-color: #f9f9f9; color: #333333;">
+
+  <div class="hidden">
+    اكتشف الصفحة الرئيسية الجديدة كليا لمنصة شيزلونج!
+    &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847;
+  </div>
+  <div role="article" aria-roledescription="email" aria-label="" lang="en">
+
+    <div class="bg-_f9f9f9" style="font-family: 'Somar Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; direction: rtl;" dir="rtl">
+      <table cellpadding="0" cellspacing="0" border="0" class="w-full" align="center" role="none">
+        <tr>
+          <td align="center" class="py-10" style="padding-top: 40px; padding-bottom: 40px; text-align: center;">
+            <!-- Main Content Table -->
+            <table cellpadding="0" cellspacing="0" border="0" class="w-600px max-w-full bg-white rounded-lg shadow-md" style="width: 600px; max-width: 100%; background-color: white; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); margin-left: auto; margin-right: auto;" dir="rtl" align="center" role="none">
+              <!-- Header Section -->
+              <tr>
+                <td class="bg-white bg-url-https---lh3_googleusercontent_com-d-1LvGw92x9FbSaCS3cKwIrwRgzLU03RdIZ- bg-right bg-no-repeat" style="background-position: right; background-repeat: no-repeat;">
+                  <table cellpadding="0" cellspacing="0" border="0" class="w-full" role="none">
+                    <tr>
+                      <td align="center" class="py-5">
+                        <img width="250" src="https://lh3.googleusercontent.com/d/1KIgIPFpuMfFOqOo96O7pPHez-_LgJXax" alt="شعار شيزلونج" class="mx-auto block" style="display: block; margin: 0 auto;">
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+
+              <!-- Hero Section -->
+              <tr>
+                <td class="bg-_edf8ff" style="background-color: #edf8ff;">
+                  <table cellpadding="0" cellspacing="0" border="0" class="w-full" role="none">
+                    <tr>
+                      <td>
+                        <img width="100%" src="https://lh3.googleusercontent.com/d/15qy9jL4atmZPs7SFhLVXby2275AHHkgD" alt="صورة رئيسية" class="block" style="display: block; width: 100%;">
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+
+              <!-- Discover Section -->
+              <tr>
+                <td class="bg-_035fe9 text-center py-10" style="background-color: #035fe9; text-align: center; padding-top: 40px; padding-bottom: 40px;">
+                  <table cellpadding="0" cellspacing="0" border="0" class="w-full" role="none">
+                    <tr>
+                      <td align="center" class="px-30px" style="padding-left: 30px; padding-right: 30px;">
+                        <h2 class="mt-0 mb-4 text-white text-2xl" style="margin-top: 0; margin-bottom: 16px; color: #ffffff; font-family: 'Somar Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 24px; text-align: center;">
+                          اكتشف الصفحة الرئيسية الجديدة كليًا لمنصة شيزلونج!
+                        </h2>
+                        <p class="max-w-500px mx-auto my-0 text-white text-base leading-normal" style="max-width: 500px; margin: 0 auto; color: #ffffff; font-family: 'Somar Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.5; text-align: center;">
+                          لقد أطلقنا مؤخرًا الصفحة الرئيسية الجديدة لشيزلونج - بتصميم حديث وسهل الاستخدام، لتجربة أسرع، أكثر تخصيصًا، وأسهل في التنقل.
+                        </p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+
+              <!-- What's New Section -->
+              <tr>
+                <td class="pt-10 pb-5 px-5" style="padding-top: 40px; padding-bottom: 20px; padding-left: 20px; padding-right: 20px;">
+                  <table cellpadding="0" cellspacing="0" border="0" class="w-full max-w-500px mx-auto" role="none">
+                    <tr>
+                      <td align="center" class="pb-30px" style="padding-bottom: 30px;">
+                        <h2 class="mt-0 mb-0 text-2xl text-_1f1f1f" style="margin-top: 0; margin-bottom: 0; font-family: 'Somar Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 24px; color: #1f1f1f; text-align: center;">
+                          ما الجديد؟
+                        </h2>
+                      </td>
+                    </tr>
+
+                    <!-- Feature Card 1 -->
+                    <tr>
+                      <td class="pb-5" style="padding-bottom: 20px;">
+                        <table cellpadding="0" cellspacing="0" border="0" class="w-full border border-_dee2e6 rounded-lg" style="width: 100% !important; max-width: 100% !important; border: 1px solid #dee2e6; border-radius: 8px;" role="none">
+                          <tr>
+                            <td class="p-4 border border-solid border-gray-200 rounded-lg text-_666666" style="padding: 16px; border: 1px solid #dee2e6; border-radius: 8px; color: #666666; width: 100%;">
+                              <p class="mt-0 mb-2 text-base font-bold text-right text-_1f1f1f" style="margin-top: 0; margin-bottom: 8px; font-family: 'Somar Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; text-align: right; color: #1f1f1f;">
+                                ✨ تصميم عصري ومريح
+                              </p>
+                              <p class="mb-0 text-base text-right" style="margin-bottom: 0; font-family: 'Somar Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 16px; text-align: right; color: #666666;">
+                                مساحة أنظف وأكثر هدوءًا لتصفح شيزلونج بكل راحة.
+                              </p>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+
+                    <!-- Feature Card 2 -->
+                    <tr>
+                      <td class="pb-5" style="padding-bottom: 20px;">
+                        <table cellpadding="0" cellspacing="0" border="0" class="w-full border border-_dee2e6 rounded-lg" style="width: 100% !important; max-width: 100% !important; border: 1px solid #dee2e6; border-radius: 8px;" role="none">
+                          <tr>
+                            <td class="p-4 border border-solid border-gray-200 rounded-lg text-_666666" style="padding: 16px; border: 1px solid #dee2e6; border-radius: 8px; color: #666666; width: 100%;">
+                              <p class="mt-0 mb-2 text-base font-bold text-right text-_1f1f1f" style="margin-top: 0; margin-bottom: 8px; font-family: 'Somar Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; text-align: right; color: #1f1f1f;">
+                                🔍 تنقل أذكى
+                              </p>
+                              <p class="mb-0 text-base text-right" style="margin-bottom: 0; font-family: 'Somar Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 16px; text-align: right; color: #666666;">
+                                اوصل لما تحتاجه بخطوات أقل وبسرعة أكبر.
+                              </p>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+
+                    <!-- Feature Card 3 -->
+                    <tr>
+                      <td class="pb-5" style="padding-bottom: 20px;">
+                        <table cellpadding="0" cellspacing="0" border="0" class="w-full border border-_dee2e6 rounded-lg" style="width: 100% !important; max-width: 100% !important; border: 1px solid #dee2e6; border-radius: 8px;" role="none">
+                          <tr>
+                            <td class="p-4 border border-solid border-gray-200 rounded-lg text-_666666" style="padding: 16px; border: 1px solid #dee2e6; border-radius: 8px; color: #666666; width: 100%;">
+                              <p class="mt-0 mb-2 text-base font-bold text-right text-_1f1f1f" style="margin-top: 0; margin-bottom: 8px; font-family: 'Somar Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; text-align: right; color: #1f1f1f;">
+                                💡 اقتراحات مخصصة لك
+                              </p>
+                              <p class="mb-0 text-base text-right" style="margin-bottom: 0; font-family: 'Somar Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 16px; text-align: right; color: #666666;">
+                                محتوى وتوصيات لمعالجين مصممة خصيصًا حسب احتياجاتك.
+                              </p>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+
+                    <!-- CTA Button -->
+                    <tr>
+                      <td align="center" class="pt-5 pb-10" style="padding-top: 20px; padding-bottom: 40px;">
+                        <table cellpadding="0" cellspacing="0" border="0" role="none">
+                          <tr>
+                            <td align="center" style="border-radius: 9999px; background-color: #035fe9; padding: 16px 48px;">
+                              <a href="https://www.shezlong.com/ar/" target="_blank" class="rounded-full bg-_035fe9 text-white inline-block text-base no-underline" style="color: #ffffff; display: inline-block; font-family: 'Somar Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 16px; text-decoration: none;">
+                                جرّب الصفحة الجديدة الآن
+                              </a>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+
+              <!-- Footer Top Section -->
+              <tr>
+                <td class="bg-_101828 bg-url-https---lh3_googleusercontent_com-d-17ETkmOoi3tb2K44sewdqylR2N8iis-wn- bg-right bg-no-repeat bg-auto py-10 px-5" style="background-color: #101828; background-image: url('https://lh3.googleusercontent.com/d/17ETkmOoi3tb2K44sewdqylR2N8iis-wn'); background-position: right; background-repeat: no-repeat; background-size: auto; padding: 40px 20px;">
+                  <table cellpadding="0" cellspacing="0" border="0" class="w-full" role="none">
+                    <!-- Footer Content -->
+                    <tr>
+                      <td>
+                        <table cellpadding="0" cellspacing="0" border="0" class="w-full" role="none">
+                          <!-- Footer Tagline -->
+                          <tr>
+                            <td align="center" style="text-align: center;">
+                              <h2 class="text-45px font-normal mt-0 mb-2 text-white" style="font-size: 45px; font-weight: normal; margin-top: 0; margin-bottom: 8px; color: #ffffff; font-family: 'Somar Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+                                اتكلم..هنساعدك
+                              </h2>
+                              <p class="text-xl font-medium mt-0 mb-30px text-white" style="font-size: 20px; font-weight: 500; margin-top: 0; margin-bottom: 30px; color: #ffffff; font-family: 'Somar Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+                                ثق في رحلتك حتى ولو بخطوات بسيطة، المهم أن تكون خطوات ثابتة.
+                              </p>
+                            </td>
+                          </tr>
+
+                          <!-- App Downloads -->
+                          <tr>
+                            <td align="center" style="text-align: center;">
+                              <p class="text-xl font-medium mt-0 mb-4 text-white" style="font-size: 20px; font-weight: 500; margin-top: 0; margin-bottom: 16px; color: #ffffff; font-family: 'Somar Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+                                قم بتنزيل تطبيق شيزلونج الآن
+                              </p>
+
+                              <table cellspacing="0" cellpadding="0" border="0" align="center" role="none">
+                                <tr>
+                                  <td class="pl-2" style="padding-left: 8px;">
+                                    <a href="https://play.google.com/store/apps/details?id=com.shezlong.client" target="_blank">
+                                      <img width="140" src="https://lh3.googleusercontent.com/d/1UjFf3Z8z0puAinuEMMA6NYMBEM-6TLhD" alt="جوجل بلاي" class="block" style="display: block;">
+                                    </a>
+                                  </td>
+                                  <td class="pr-2" style="padding-right: 8px;">
+                                    <a href="https://apps.apple.com/app/id1530680411" target="_blank">
+                                      <img width="140" src="https://lh3.googleusercontent.com/d/1iK2bX-G1kQWemB_AgskDgnpBxuEwrYY4" alt="آب ستور" class="block" style="display: block;">
+                                    </a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+
+                          <!-- Social Media -->
+                          <tr>
+                            <td align="center" class="pt-30px" style="padding-top: 30px; text-align: center;">
+                              <table cellspacing="0" cellpadding="0" border="0" align="center" role="none">
+                                <tr>
+                                  <td class="pl-10px align-middle" style="padding-left: 10px; vertical-align: middle;">
+                                    <p class="text-xl font-medium m-0 text-white" style="font-size: 20px; font-weight: 500; margin: 0; color: #ffffff; font-family: 'Somar Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+                                      تابعنا
+                                    </p>
+                                  </td>
+                                  <td class="pr-10px align-middle" style="padding-right: 10px; vertical-align: middle;">
+                                    <table cellspacing="0" cellpadding="0" border="0" role="none">
+                                      <tr>
+                                        <td class="pl-3" style="padding-left: 12px;">
+                                          <a href="https://www.facebook.com/ShezlongApp?_rdc=2&_rdr#" target="_blank">
+                                            <img width="30" height="30" src="https://lh3.googleusercontent.com/d/1xH-_tG0uLatonS4tFV_wLsIAdUC4AFA2" alt="فيسبوك" class="block" style="display: block;">
+                                          </a>
+                                        </td>
+                                        <td class="pl-3" style="padding-left: 12px;">
+                                          <a href="https://www.instagram.com/ShezlongApp/" target="_blank">
+                                            <img width="30" height="30" src="https://lh3.googleusercontent.com/d/1X4FOLnflbpoPmy8aHPhZdkh45UvOedu8" alt="انستجرام" class="block" style="display: block;">
+                                          </a>
+                                        </td>
+                                        <td class="pl-3" style="padding-left: 12px;">
+                                          <a href="https://x.com/ShezlongGulf" target="_blank">
+                                            <img width="30" height="30" src="https://lh3.googleusercontent.com/d/1_h_AhWm2fs1QZ8myK_WUBXmjt8fSyJT7" alt="تويتر" class="block" style="display: block;">
+                                          </a>
+                                        </td>
+                                        <td>
+                                          <a href="https://www.linkedin.com/company/shezlong/posts/?feedView=all" target="_blank">
+                                            <img width="30" height="30" src="https://lh3.googleusercontent.com/d/1Jpg15gdxGm06X0A54nJ-_-LDk0QB3v5f" alt="لينكد إن" class="block" style="display: block;">
+                                          </a>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+
+              <!-- Footer Bottom Section -->
+              <tr>
+                <td class="p-5" style="padding: 20px;">
+                  <table cellpadding="0" cellspacing="0" border="0" class="w-full" role="none">
+                    <tr>
+                      <td class="w-60pc text-right" style="width: 60%; text-align: right;">
+                        <p class="m-0 text-sm text-_666666" style="margin: 0; font-family: 'Somar Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; color: #666666;">
+                          &copy; 2024 شيزلونج. جميع الحقوق محفوظة.
+                        </p>
+                      </td>
+                      <td class="w-40pc text-left" style="width: 40%; text-align: left;">
+                        <a href="https://www.shezlong.com/ar/Terms?target=%2Far%2Fhome" target="_blank" class="no-underline text-_333333 text-sm" style="text-decoration: none; color: #333333; font-family: 'Somar Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px;">
+                          <span class="border-0 border-l-2 border-_b6e4ff border-solid pl-3 ml-2" style="border-left: 2px solid #b6e4ff; padding-left: 12px; margin-left: 8px;">الشروط والأحكام</span>
+                          الأسئلة الشائعة
+                        </a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+  </div>
+</body>
+</html>
