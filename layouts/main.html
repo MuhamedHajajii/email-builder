@@ -1,87 +1,71 @@
 <!DOCTYPE {{{ page.doctype || 'html' }}}>
 <html lang="{{ page.language || 'en' }}" xmlns:v="urn:schemas-microsoft-com:vml">
-<head>
-  <meta charset="{{ page.charset || 'utf-8' }}">
-  <meta name="x-apple-disable-message-reformatting">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="format-detection" content="telephone=no, date=no, address=no, email=no, url=no">
-  <meta name="color-scheme" content="light">
-  <meta name="supported-color-schemes" content="light">
-  <!--[if mso]>
-  <noscript>
-    <xml>
-      <o:OfficeDocumentSettings xmlns:o="urn:schemas-microsoft-com:office:office">
-        <o:PixelsPerInch>96</o:PixelsPerInch>
-      </o:OfficeDocumentSettings>
-    </xml>
-  </noscript>
-  <style>
-    td,th,div,p,a,h1,h2,h3,h4,h5,h6 {font-family: "Segoe UI", sans-serif; mso-line-height-rule: exactly;}
-    .mso-break-all {word-break: break-all;}
-  </style>
-  <![endif]-->
-  <if condition="page.title">
-    <title>{{{ page.title }}}</title>
-  </if>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" media="screen">
-  <style>
-    @tailwind components;
-    @tailwind utilities;
+  <head>
+    <meta charset="{{ page.charset || 'utf-8' }}" />
+    <meta name="x-apple-disable-message-reformatting" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no, url=no" />
+    <meta name="color-scheme" content="light" />
+    <meta name="supported-color-schemes" content="light" />
+    <!--[if mso]>
+      <noscript>
+        <xml>
+          <o:OfficeDocumentSettings xmlns:o="urn:schemas-microsoft-com:office:office">
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+          </o:OfficeDocumentSettings>
+        </xml>
+      </noscript>
+      <style>
+        td,
+        th,
+        div,
+        p,
+        a,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          font-family: "Segoe UI", sans-serif;
+          mso-line-height-rule: exactly;
+        }
+        .mso-break-all {
+          word-break: break-all;
+        }
+      </style>
+    <![endif]-->
+    <if condition="page.title">
+      <title>{{{ page.title }}}</title>
+    </if>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+      media="screen" />
+    <style>
+      @tailwind components;
+      @tailwind utilities;
 
-    /* iOS dark mode fix */
-    :root {
-      color-scheme: light !important;
-    }
+      /* iOS dark mode fix */
+      :root {
+        color-scheme: light !important;
+      }
 
-    img {
-      @apply max-w-full align-middle;
-    }
+      img {
+        @apply max-w-full align-middle;
+      }
 
-    /* Force light mode */
-    html, body {
-      background-color: #f9f9f9 !important;
-      color: #333333 !important;
-    }
+      /* Force light mode */
+      html,
+      body {
+        background-color: #f9f9f9 !important;
+        color: #333333 !important;
+        margin: 0 !important;
+      }
 
-    .bg-\[\#f9f9f9\] {
-      background-color: #f9f9f9 !important;
-    }
-    .bg-white {
-      background-color: white !important;
-    }
-    .bg-\[\#edf8ff\] {
-      background-color: #edf8ff !important;
-    }
-    .bg-\[\#035fe9\] {
-      background-color: #035fe9 !important;
-    }
-    .bg-\[\#101828\] {
-      background-color: #101828 !important;
-    }
-    .text-white {
-      color: #ffffff !important;
-    }
-    .text-\[\#333333\] {
-      color: #333333 !important;
-    }
-    .text-\[\#666666\] {
-      color: #666666 !important;
-    }
-    .text-\[\#1f1f1f\] {
-      color: #1f1f1f !important;
-    }
-    .border-\[\#dee2e6\] {
-      border-color: #dee2e6 !important;
-    }
-    .border-\[\#b6e4ff\] {
-      border-color: #b6e4ff !important;
-    }
-
-    /* Dark mode overrides - forced to light */
-    @media (prefers-color-scheme: dark) {
-      body, .bg-\[\#f9f9f9\] {
+      .bg-\[\#f9f9f9\] {
         background-color: #f9f9f9 !important;
       }
       .bg-white {
@@ -96,6 +80,9 @@
       .bg-\[\#101828\] {
         background-color: #101828 !important;
       }
+      .text-white {
+        color: #ffffff !important;
+      }
       .text-\[\#333333\] {
         color: #333333 !important;
       }
@@ -105,31 +92,80 @@
       .text-\[\#1f1f1f\] {
         color: #1f1f1f !important;
       }
-      div, p, span, h1, h2, h3, h4, h5, h6, a {
-        color: inherit !important;
+      .border-\[\#dee2e6\] {
+        border-color: #dee2e6 !important;
       }
-      [data-ogsc] .bg-white {
-        background-color: white !important;
+      .border-\[\#b6e4ff\] {
+        border-color: #b6e4ff !important;
       }
-      [data-ogsc] .text-\[\#333333\] {
-        color: #333333 !important;
+
+      /* Dark mode overrides - forced to light */
+      @media (prefers-color-scheme: dark) {
+        body,
+        .bg-\[\#f9f9f9\] {
+          background-color: #f9f9f9 !important;
+        }
+        .bg-white {
+          background-color: white !important;
+        }
+        .bg-\[\#edf8ff\] {
+          background-color: #edf8ff !important;
+        }
+        .bg-\[\#035fe9\] {
+          background-color: #035fe9 !important;
+        }
+        .bg-\[\#101828\] {
+          background-color: #101828 !important;
+        }
+        .text-\[\#333333\] {
+          color: #333333 !important;
+        }
+        .text-\[\#666666\] {
+          color: #666666 !important;
+        }
+        .text-\[\#1f1f1f\] {
+          color: #1f1f1f !important;
+        }
+        div,
+        p,
+        span,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        a {
+          color: inherit !important;
+        }
+        [data-ogsc] .bg-white {
+          background-color: white !important;
+        }
+        [data-ogsc] .text-\[\#333333\] {
+          color: #333333 !important;
+        }
+        [data-ogsc] .text-\[\#666666\] {
+          color: #666666 !important;
+        }
       }
-      [data-ogsc] .text-\[\#666666\] {
-        color: #666666 !important;
-      }
-    }
-  </style>
-  <stack name="head" />
-</head>
-<body class="m-0 p-0 w-full [word-break:break-word] [-webkit-font-smoothing:antialiased] {{ page.bodyClass || '' }}" style="background-color: #f9f9f9; color: #333333;">
-  <if condition="page.preheader">
-    <div class="hidden">
-      {{{ page.preheader }}}
-      <each loop="item in Array.from(Array(150))">&#8199;&#65279;&#847; </each>
+    </style>
+    <stack name="head" />
+  </head>
+  <body
+    class="m-0 p-0 w-full [word-break:break-word] [-webkit-font-smoothing:antialiased] {{ page.bodyClass || '' }}"
+    style="background-color: #f9f9f9; color: #333333">
+    <if condition="page.preheader">
+      <div class="hidden">
+        {{{ page.preheader }}}
+        <each loop="item in Array.from(Array(150))">&#8199;&#65279;&#847; </each>
+      </div>
+    </if>
+    <div
+      role="article"
+      aria-roledescription="email"
+      aria-label="{{{ page.title || '' }}}"
+      lang="{{ page.language || 'en' }}">
+      <yield />
     </div>
-  </if>
-  <div role="article" aria-roledescription="email" aria-label="{{{ page.title || '' }}}" lang="{{ page.language || 'en' }}">
-    <yield />
-  </div>
-</body>
+  </body>
 </html>
